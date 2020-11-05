@@ -19,3 +19,4 @@ jobs:
           cd ~/mathiasgilles.fr
           git pull origin master
           composer install
+          sudo APP_ENV=prod php bin/console cache:clear
