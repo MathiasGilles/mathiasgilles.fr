@@ -125,8 +125,11 @@ class BusController extends AbstractController
                 $this->addFlash('danger', "Ce joueur n'existe pas");
                 return $this->redirectToRoute('game_detail', ['id' => $game->getId()]);
             } else {
-                $existPlayer->setGorge($player->getGorge())
-                    ->setKm($player->getGorge() * 17);
+                $existPlayer->setGorge($existPlayer->getGorge() + $player->getGorge())
+                    ->setKm($existPlayer->getKm() + $player->getGorge() * 17)
+                    ->setGorgeeTotal($existPlayer->getGorgeeTotal() + $existPlayer->getGorge())
+                    ->setKmTotal($existPlayer->getGorgeeTotal() * 17);
+
                 $manager->persist($existPlayer);
                 $manager->flush();
                 $this->addFlash('success', "Gorgée ajoutée, que ca carbure en sah");

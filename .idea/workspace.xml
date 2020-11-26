@@ -180,7 +180,7 @@
       <workItem from="1604483910529" duration="6709000" />
       <workItem from="1605536441663" duration="44000" />
       <workItem from="1606294678408" duration="7565000" />
-      <workItem from="1606399288413" duration="2442000" />
+      <workItem from="1606399288413" duration="3077000" />
     </task>
     <servers />
   </component>
@@ -200,9 +200,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="625" y="271" width="670" height="676" key="search.everywhere.popup" timestamp="1606296681647">
-      <screen x="0" y="23" width="1920" height="1110" />
+    <state x="-1295" y="206" width="670" height="644" key="search.everywhere.popup" timestamp="1606406140344">
+      <screen x="-1920" y="-30" width="1920" height="1057" />
     </state>
+    <state x="-1295" y="206" width="670" height="644" key="search.everywhere.popup/-1920.-30.1920.1057/0.23.1440.813@-1920.-30.1920.1057" timestamp="1606406140344" />
     <state x="625" y="271" width="670" height="676" key="search.everywhere.popup/0.23.1920.1110@0.23.1920.1110" timestamp="1606296681647" />
   </component>
 </project>
