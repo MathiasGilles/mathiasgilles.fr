@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/bus/main.css') }}">
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <section>
+            <h1>Bus magique</h1>
+            {{ form(BusForm) }}
+        </section>
+        <h2>Total des gorgées par joueur</h2>
+        {% if players is null %}
+            <div>Il n'y a pas de partie en cours</div>
+
+        {% else %}
+            <ul>
+            {% for player in players %}
+                <li class="player">
+                    {{ player.player }} à pris {{ player.gorgeetotal }} gorgées, et à parcourus {{ player.kmtotal }} km.
+                </li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('js/bus-magique.js') }}"></script>
+{% endblock %}

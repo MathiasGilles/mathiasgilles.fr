@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <h1>Partie actuelle</h1>
+        <ul>
+            {% for player in game.players %}
+                <li>{{ player.player }} - {{ player.gorge }} gorgées - {{ player.km }} km parcourus</li>
+            {% endfor %}
+        </ul>
+        <h2>Ajouter des gorgées à un joueur</h2>
+        {{ form(addGorgeForm) }}
+    </div>
+
+{% endblock %}

@@ -1,0 +1,10 @@
+.containe{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.containe section:nth-child(1){
+    width: 60%;
+    text-align: center;
+}
