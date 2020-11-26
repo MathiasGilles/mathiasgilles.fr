@@ -20,11 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff8939e9-608e-442f-9f85-da2e7cd905fd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bus/game.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bus/game.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bus/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bus/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bus/new_game.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bus/new_game.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +183,7 @@
       <workItem from="1604483910529" duration="6709000" />
       <workItem from="1605536441663" duration="44000" />
       <workItem from="1606294678408" duration="7565000" />
-      <workItem from="1606399288413" duration="610000" />
+      <workItem from="1606399288413" duration="1141000" />
     </task>
     <servers />
   </component>
