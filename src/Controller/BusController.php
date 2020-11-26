@@ -135,4 +135,20 @@ class BusController extends AbstractController
             'addGorgeForm' => $form->createView(),
         ]);
     }
+
+    /**
+     * @Route("game/get/last",name="game_get_last")
+     * @param GameRepository $repo
+     * @return RedirectResponse
+     */
+    public function getGameNotFinished(GameRepository $repo)
+    {
+        $game = $repo->findOneBy(['status'=>true]);
+        if ($game === null){
+            $this->addFlash('danger',"Il n'y a pas de partie en cours");
+            return $this->redirectToRoute('bus');
+        }
+        return $this->redirectToRoute('game_detail',['id'=>$game->getId()]);
+
+    }
 }
