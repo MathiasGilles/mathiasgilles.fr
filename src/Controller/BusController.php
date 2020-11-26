@@ -118,6 +118,8 @@ class BusController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
 
+            $manager = $this->getDoctrine()->getManager();
+
             $existPlayer = $repo->findOneBy(['player' => $form['player']->getData()]);
             if ($existPlayer === null) {
                 $this->addFlash('danger', "Ce joueur n'existe pas");
@@ -125,6 +127,8 @@ class BusController extends AbstractController
             } else {
                 $existPlayer->setGorge($player->getGorge())
                     ->setKm($player->getGorge() * 17);
+                $manager->persist($existPlayer);
+                $manager->flush();
                 $this->addFlash('success', "Gorgée ajoutée, que ca carbure en sah");
                 return $this->redirectToRoute('game_detail', ['id' => $game->getId()]);
             }
@@ -143,12 +147,12 @@ class BusController extends AbstractController
      */
     public function getGameNotFinished(GameRepository $repo)
     {
-        $game = $repo->findOneBy(['status'=>true]);
-        if ($game === null){
-            $this->addFlash('danger',"Il n'y a pas de partie en cours");
+        $game = $repo->findOneBy(['status' => true]);
+        if ($game === null) {
+            $this->addFlash('danger', "Il n'y a pas de partie en cours");
             return $this->redirectToRoute('bus');
         }
-        return $this->redirectToRoute('game_detail',['id'=>$game->getId()]);
+        return $this->redirectToRoute('game_detail', ['id' => $game->getId()]);
 
     }
 }
