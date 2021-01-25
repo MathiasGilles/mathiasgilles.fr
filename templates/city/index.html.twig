@@ -1,0 +1,31 @@
+{% extends 'bus/bus_base.html.twig' %}
+
+
+{% block body %}
+    <br>
+    <a class="btn btn-primary" href="{{ path('city_create') }}">Créer une ville</a>
+    <br><br>
+    <table class="table">
+        <thead>
+        <tr>
+            <td>Ville</td>
+            <td>Longitude</td>
+            <td>Latitude</td>
+            <td>Modifier</td>
+            <td>Supprimer</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            {% for city in cities %}
+                <td>{{ city.name }}</td>
+                <td>{{ city.longitude }}</td>
+                <td>{{ city.latitude }}</td>
+                <td><a class="btn btn-primary" href="{{ path('city_update',{'id':city.id}) }}">Modifier</a></td>
+                <td><a class="btn btn-danger" href="{{ path('city_delete',{'id':city.id}) }}">Supprimer</a></td>
+            {% endfor %}
+        </tr>
+        </tbody>
+    </table>
+
+{% endblock %}

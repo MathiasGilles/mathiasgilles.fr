@@ -49,6 +49,11 @@ class BusMagique
      */
     private $km_total;
 
+    /**
+     * @ORM\Column(type="json", nullable=true)
+     */
+    private $cities = [];
+
     public function __construct()
     {
         $this->games = new ArrayCollection();
@@ -142,6 +147,18 @@ class BusMagique
     public function setKmTotal(int $km_total): self
     {
         $this->km_total = $km_total;
+
+        return $this;
+    }
+
+    public function getCities(): ?array
+    {
+        return $this->cities;
+    }
+
+    public function setCities(?array $cities): self
+    {
+        $this->cities = $cities;
 
         return $this;
     }

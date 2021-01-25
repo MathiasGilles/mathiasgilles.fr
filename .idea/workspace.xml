@@ -21,7 +21,18 @@
   <component name="ChangeListManager">
     <list default="true" id="ff8939e9-608e-442f-9f85-da2e7cd905fd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/BusController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BusController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20201125091202.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20201125092943.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20201125094635.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20201125095953.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20201125104901.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/default/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/BusMagique.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/BusMagique.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bus/bus_base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bus/bus_base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/default/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/default/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,6 +176,9 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/css/default" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/Form" />
     </key>
@@ -180,7 +194,9 @@
       <workItem from="1604483910529" duration="6709000" />
       <workItem from="1605536441663" duration="44000" />
       <workItem from="1606294678408" duration="7565000" />
-      <workItem from="1606399288413" duration="3077000" />
+      <workItem from="1606399288413" duration="3349000" />
+      <workItem from="1607547534791" duration="5708000" />
+      <workItem from="1611567674254" duration="1858000" />
     </task>
     <servers />
   </component>
@@ -200,10 +216,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1295" y="206" width="670" height="644" key="search.everywhere.popup" timestamp="1606406140344">
-      <screen x="-1920" y="-30" width="1920" height="1057" />
+    <state x="659" y="288" width="602" height="580" key="find.popup" timestamp="1607551743099">
+      <screen x="0" y="23" width="1920" height="1110" />
+    </state>
+    <state x="659" y="288" width="602" height="580" key="find.popup/0.23.1920.1110@0.23.1920.1110" timestamp="1607551743099" />
+    <state x="625" y="271" width="670" height="676" key="search.everywhere.popup" timestamp="1607549845711">
+      <screen x="0" y="23" width="1920" height="1110" />
     </state>
     <state x="-1295" y="206" width="670" height="644" key="search.everywhere.popup/-1920.-30.1920.1057/0.23.1440.813@-1920.-30.1920.1057" timestamp="1606406140344" />
-    <state x="625" y="271" width="670" height="676" key="search.everywhere.popup/0.23.1920.1110@0.23.1920.1110" timestamp="1606296681647" />
+    <state x="625" y="271" width="670" height="676" key="search.everywhere.popup/0.23.1920.1110@0.23.1920.1110" timestamp="1607549845711" />
   </component>
 </project>
